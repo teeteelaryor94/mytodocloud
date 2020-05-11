@@ -1,6 +1,9 @@
 version: "3"
 
 services:
+  todo-postgres:
+    container_name: teeteelaryor94/todo-postgres:1.0
+    
   todo-cache-ingestion:
     build:
       dockerfile: ../Dockerfile.nodejs.prod
