@@ -23,8 +23,8 @@ before_install:
  
 # Build development images for test
 before_script:
-  - docker build ./todo-view -f ./todo-view/Dockerfile.dev -t gravitonian/todo-view-test
-  - docker build ./todo-cache-service -f Dockerfile.nodejs.dev -t gravitonian/todo-cache-service-test
+  - docker build ./todo-view -f ./todo-view/Dockerfile.dev -t teeteelaryor94/todo-view-test
+  - docker build ./todo-cache-service -f Dockerfile.nodejs.dev -t teeteelaryor94/todo-cache-service-test
  
 # Run some tests
 script:
