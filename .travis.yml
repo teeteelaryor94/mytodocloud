@@ -43,13 +43,13 @@ after_success:
   
   deploy:
     provider: elasticbeanstalk
-    region: <YOUR-AWS_REGION>
-    app: <YOUR-EB_APP_NAME>
-    env: <YOUR-EB_ENV_NAME>
-    bucket_name: <YOUR-EB_S3_BUCKET_NAME>
+    region: us-east-1
+    app: Todo Application
+    env: TodoApplication-env
+    bucket_name: elasticbeanstalk-us-east-1-159552956113
     bucket_path: todo-app
     on:
       branch: master
-    access_key_id: $AWS_ACCESS_KEY
+    access_key_id: AKIASKJQY43IXCVHCSOX
     secret_access_key:
-      secure: $AWS_SECRET_KEY
+      secure: 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
